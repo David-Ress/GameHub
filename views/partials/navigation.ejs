@@ -1,0 +1,15 @@
+<body>
+  <header>
+    <h1>
+      <a href="/">GameHub</a>
+    </h1>
+    <nav>
+      <ul>
+        <% for(const game of games){ %>
+        <li>
+          <a href="/game/<%= game.name %>"><%= game.title %></a>
+        </li>
+        <% } %>
+      </ul>
+    </nav>
+  </header>

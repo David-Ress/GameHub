@@ -22,23 +22,24 @@ const controller = {
 
     const gamesData = games.find( game => game.name === nomDuJeu);
 
-    console.log(gamesData);
+    // console.log(gamesData);
+    
+    res.locals.games = games;
+    
     
     if(gamesData){
-      res.locals.games = games;
-      res.locals.cssFile = gamesData.cssFile;
       res.locals.title = gamesData.title;
-  
+      res.locals.cssFile = gamesData.cssFile;
+      
       res.render(nomDuJeu);
     } else {
-      res.status(404).send('Sorry cant find that!');
+      res.locals.cssFile = null;
+      res.status(404).render('404');
     }
-    
 
-  
   },
 };
 
- 
 
 module.exports = controller;
+
