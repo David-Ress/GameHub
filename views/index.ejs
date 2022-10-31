@@ -7,8 +7,16 @@
     </h1>
     <nav>
       <ul>
+        <% for(const game of games){ %>
+        <li>
+          <a href="game/<%= game.name %>"><%= game.title %></a>
+        </li>
+        <% } %>
+<!--       
+     
+
         <li><a href="game/fourchette">Jeu de la fourchette</a></li>
-        <li><a href="game/diceRoller">Dice Roller</a></li>
+        <li><a href="game/diceRoller">Dice Roller</a></li> -->
       </ul>
     </nav>
   </header>
