@@ -1,0 +1,45 @@
+body {
+  background: #ddd;
+}
+
+#board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cell {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+}
+
+.player {
+  background-image: url("../img/sprite.png");
+  background-size: 70px;
+  background-repeat: no-repeat;
+}
+
+.row {
+  display: flex;
+}
+
+.target {
+  background-color: greenyellow;
+}
+
+.right {
+  background-position-y: -160px;
+}
+
+.left {
+  background-position-y: -80px;
+}
+
+.up {
+  background-position-y: -240px;
+}
+
+.down {
+  background-position-y: 0px;
+}
