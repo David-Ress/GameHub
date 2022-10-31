@@ -1,0 +1,25 @@
+{
+  "name": "s03-gamehub-david-ress",
+  "version": "1.0.0",
+  "description": "Bon, on a quelques jeux qui traînent, c'est cool ! Mais c'est le bazar !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node-dev index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-clock-Maya/S03-gamehub-David-Ress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-clock-Maya/S03-gamehub-David-Ress/issues"
+  },
+  "homepage": "https://github.com/O-clock-Maya/S03-gamehub-David-Ress#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
