@@ -2,10 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>GameHub</title>
+  <title><%= locals.title %></title>
   <link rel="stylesheet" href="/css/style.css">
   
-  <% if(css != null) { %>
-    <link rel="stylesheet" href="/css/diceRoller.css">
+  <% if(cssFile != null) { %>
+    <link rel="stylesheet" href="/css/<%=locals.cssFile%>">
   <% } %>
+
 </head>

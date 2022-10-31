@@ -3,7 +3,8 @@ const games = require('../games.json');
 const controller = {
   getHomepage(req,res){
     res.locals.games = games;
-    res.locals.css = null;
+    res.locals.cssFile = null;
+    res.locals.title = "Gamehub";
     res.render('index');
   },
   // getFourchette(req,res){
@@ -25,7 +26,8 @@ const controller = {
     
     if(gamesData){
       res.locals.games = games;
-      res.locals.css = gamesData.cssFile;
+      res.locals.cssFile = gamesData.cssFile;
+      res.locals.title = gamesData.title;
   
       res.render(nomDuJeu);
     } else {
